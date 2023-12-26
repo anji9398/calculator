@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculate</title>
+	<style>
+		body
+		{ 
+			margin-left: 35%;
+			margin-top: 5%; 
+			
+		}
+		input
+		{
+		  width:50%;
+		  margin-left:20% ;	
+		}
+		table
+		{
+			background-color: rebeccapurple;
+			color: white;
+			
+            padding: 30px;
+            box-shadow:
+				    inset 0 -3em 3em rgba(0, 200, 0, 0.3),
+				    0 0 0 2px white,
+				    0.3em 0.3em 1em rgba(200, 0, 0, 0.6);
+		}
+		
+		input[type=submit] {
+        padding: 5px 15px;
+        background: rgb(0, 255, 64);
+        border: 0 none;
+        cursor: pointer;
+        
+        border-radius: 5px;
+          }
+		
+	</style>
+</head>
+
+<body>
+	<form action="grade.jsp" method="post">
+     
+		<table >
+			<thead>
+				<tr>
+					<th>Subject Names</th>
+					<th>Obtained Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><label>Telugu</label></td>
+					<td><input type="number" name="sub1" min="1" max="100" required></td>
+				</tr>
+				<tr>
+					<td><label>Hindi</label></td>
+					<td><input type="number" name="sub2" required></td>
+				</tr>
+				<tr>
+					<td><label>Hindi</label></td>
+					<td><input type="number" name="sub3" required></td>
+				</tr>
+				<tr>
+					<td><label>English</label></td>
+					<td><input type="text" name="sub4" required></td>
+				</tr>
+				<tr>
+					<td><label>Mathmatics</label></td>
+					<td><input type="text" name="sub5" required></td>
+				</tr>
+				<tr>
+					<td><label>Science</label></td>
+					<td><input type="text" name="sub6" required></td>
+				</tr>
+				<tr>
+					<td><label>Social </label></td>
+					<td><input type="text" name="sub7" required></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="text-align: center;"><input type="submit" value="Submit" style="margin-left: 10px;"></td> 
+				</tr>
+				
+			</tbody>
+		</table>
+		
+	</form>
+</body>
+
+</html>
